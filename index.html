@@ -1,261 +1,33 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue3教学项目</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-                Roboto, 'Helvetica Neue', Arial, sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        .home-container {
-            position: relative;
-            min-height: 100vh;
-            width: 100%;
-            overflow-x: hidden;
-            background-color: #000;
-            z-index: 10;
-        }
-
-        h1 {
-            z-index: 11;
-            color: aqua;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #333;
-            margin: 20px 0;
-        }
-
-        h3 {
-            color: #fff;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-        }
-
-        h4 {
-            color: #ccc;
-            margin: 15px 0 10px 0;
-            font-size: 1.2em;
-        }
-
-        /* 模板语法样式 */
-        .mobanyufa {
-            color: yellow;
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #333;
-            border-radius: 8px;
-        }
-
-        /* 事件处理样式 */
-        .shijianchuli {
-            color: yellow;
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #333;
-            border-radius: 8px;
-        }
-
-        /* 事件修饰符样式 */
-        .shijianxiushifu {
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #333;
-            border-radius: 8px;
-        }
-
-        /* 列表渲染样式 */
-        .liebiaoxuanran {
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #333;
-            border-radius: 8px;
-        }
-
-        /* key管理状态样式 */
-        .keyguanlizhuangtai {
-            color: green;
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #333;
-            border-radius: 8px;
-        }
-
-        /* 事件传参样式 */
-        .shijianchuancan {
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #333;
-            border-radius: 8px;
-        }
-
-        /* 通用组件样式 */
-        button {
-            background-color: #4dabf7;
-            color: #000;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            margin: 5px 5px 5px 0;
-            font-weight: bold;
-        }
-
-        button:hover {
-            background-color: #339af0;
-        }
-
-        a {
-            color: #4dabf7;
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px 0;
-            padding: 5px 10px;
-            border: 1px solid #4dabf7;
-            border-radius: 4px;
-        }
-
-        a:hover {
-            background-color: #4dabf7;
-            color: #000;
-        }
-
-        div {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #111;
-            border-radius: 4px;
-        }
-
-        p {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #222;
-            border-radius: 4px;
-        }
-
-        img {
-            max-width: 100px;
-            height: auto;
-            margin: 5px;
-            border-radius: 4px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vuedemodemo</title>
 </head>
+
 <body>
-    <div class="home-container">
-        <h1>VUE3教学</h1>
-        <hr>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
 
-        <!-- 模板语法组件 -->
-        <div class="mobanyufa">
-            <h3>模板语法</h3>
-            <div>oki</div>
-            <div>&lt;a href='https://www.baidu.com'&gt;百度&lt;/a&gt;</div>
-            <div><a href='https://www.baidu.com'>百度</a></div>
-        </div>
-
-        <!-- 事件处理组件 -->
-        <div class="shijianchuli">
-            <hr>
-            <h3>事件处理</h3>
-            
-            <h4>内联事件处理器</h4>
-            <button>ADD 1</button>
-            <p>Count is : 0</p>
-            
-            <h4>方法事件处理器</h4>
-            <button>add 2</button>
-            <p>isis: 0</p>
-        </div>
-
-        <!-- 事件修饰符组件 -->
-        <div class="shijianxiushifu">
-            <h3>事件修饰符</h3>
-            <a href="https://www.baidu.com">百度百度</a>
-            <div>
-                <p>测试冒泡</p>
-            </div>
-        </div>
-
-        <!-- 列表渲染组件 -->
-        <div class="liebiaoxuanran">
-            <hr>
-            <h3>列表渲染</h3>
-            <div>张三零</div>
-            <div>小王</div>
-            <div>小李</div>
-            
-            <div>张三零 ---------- 0</div>
-            <div>小王 ---------- 1</div>
-            <div>小李 ---------- 2</div>
-            
-            <div>
-                <p>双人游戏大全</p>
-                <img src="//p0.qhimg.com/d/appstorage/74fcbb1da492f34b5ba49d99549afba0.png" alt="双人游戏大全">
-            </div>
-            <div>
-                <p>餐厅游戏大全</p>
-                <img src="//p2.qhimg.com/t01c4a2f17a198def57.png" alt="餐厅游戏大全">
-            </div>
-            <div>
-                <p>火柴人游戏合集</p>
-                <img src="//p1.qhimg.com/t0147f6ec029fefe8d7.png" alt="火柴人游戏合集">
-            </div>
-        </div>
-
-        <!-- key管理状态组件 -->
-        <div class="keyguanlizhuangtai">
-            <h3>key属性添加到v-for中</h3>
-            <div>张三零 --- 0</div>
-            <div>小王 --- 1</div>
-            <div>小李 --- 2</div>
-            
-            <div>
-                <p>双人游戏大全</p>
-                <img src="/p0.qhimg.com/d/appstorage/74fcbblda492f34b5ba49499549afba0.png" alt="双人游戏大全">
-            </div>
-            <div>
-                <p>餐厅游戏大全</p>
-                <img src="/p2.qhimg.com/t01c4a2f17a198def57.png" alt="餐厅游戏大全">
-            </div>
-            <div>
-                <p>火柴人游戏合集</p>
-                <img src="/p1.qhimg.com/t0147f6ec029fefe8d7.png" alt="火柴人游戏合集">
-            </div>
-        </div>
-
-        <!-- 事件传参组件 -->
-        <div class="shijianchuancan">
-            <h3>事件传参</h3>
-            <button>add 454</button>
-            <p>count is 0</p>
-            <button>newCount 222</button>
-            <hr>
-        </div>
-    </div>
-
-    <script>
-        console.log("Vue3教学项目 - 静态HTML展示");
-        console.log("注：这是静态展示，实际功能需要Vue.js框架支持");
-    </script>
+  <!-- UnicornStudio CDN -->
+  <script type="text/javascript">
+    ! function () {
+      if (!window.UnicornStudio) {
+        window.UnicornStudio = {
+          isInitialized: !1
+        };
+        var i = document.createElement("script");
+        i.src = "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js",
+          i.onload = function () {
+            window.UnicornStudio.isInitialized || (UnicornStudio.init(), window.UnicornStudio.isInitialized = !0)
+          },
+          (document.head || document.body).appendChild(i)
+      }
+    }();
+  </script>
 </body>
+
 </html>

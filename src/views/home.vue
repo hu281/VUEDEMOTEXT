@@ -9,6 +9,13 @@
     <Kkeyguanlizhuangtai></Kkeyguanlizhuangtai>
     <Shijianchuli></Shijianchuli>
     <Shuzubianhuazhence></Shuzubianhuazhence>
+    <jisuanshuxing></jisuanshuxing>
+    <classbangding></classbangding>
+    <stylebangding></stylebangding>
+    <Zujianzucheng></Zujianzucheng>
+    <Zujianqiantao></Zujianqiantao>
+    <Zujianchuanzhiprops></Zujianchuanzhiprops>
+    <PropsjiaoyanA></PropsjiaoyanA>
   </div>
 </template>
 
@@ -23,6 +30,15 @@ import shijianchuancan from '../components/shijianchuancan.vue';
 import shijianxiushifu from '../components/shijianxiushifu.vue';
 import Shuzubianhuazhence from '../components/shuzubianhuazhence.vue';
 import shuzubianhuazhence from '../components/shuzubianhuazhence.vue';
+import jisuanshuxing from '../components/jisuanshuxing.vue';
+import classbangding from '../components/classbangding.vue';
+import stylebangding from '../components/stylebangding.vue';
+import biaodanshujubangding from '../components/biaodanshujubangding.vue';
+import mobanyinyong from '../components/mobanyinyong.vue';
+import Zujianzucheng from '../components/zujianzucheng.vue';
+import Zujianqiantao from '../components/zujianqiantao.vue';
+import Zujianchuanzhiprops from '../components/zujianchuanzhiprops.vue';
+import PropsjiaoyanA from '../components/propsjiaoyanA.vue';
 
 export default {
   name: 'home',
@@ -35,7 +51,16 @@ export default {
     Shijianchuli,
     shijianchuancan,
     shijianxiushifu,
-    shuzubianhuazhence
+    shuzubianhuazhence,
+    jisuanshuxing,
+    classbangding,
+    stylebangding,
+    biaodanshujubangding,
+    mobanyinyong,
+    Zujianzucheng,
+    Zujianqiantao,
+    Zujianchuanzhiprops,
+    PropsjiaoyanA,
   },
 }
 </script>

@@ -8,7 +8,32 @@
         <hr>
     </div>
 </template>
-<scrippt>
-    export
-    
-</scrippt>
+
+<script>
+export default {
+    name: 'Shijianchuancan',
+    data() {
+        return {
+            countNum: 0
+        }
+    },
+    methods: {
+        count1() {
+            this.countNum += 454;
+        },
+        newCount(message) {
+            this.countNum += 222;
+            console.log(message);
+        }
+    }
+}
+</script>
+
+<style scoped>
+.shijianchuancan {
+    color: lightcoral;
+    border: 1px solid lightcoral;
+    padding: 10px;
+    margin: 10px 0;
+}
+</style>
