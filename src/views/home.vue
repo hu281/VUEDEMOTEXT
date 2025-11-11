@@ -6,16 +6,27 @@
     <Shuxingbangding></Shuxingbangding>
     <Tiaojianxuanran></Tiaojianxuanran> 
     <liebiaoxuanran></liebiaoxuanran>
-    <Kkeyguanlizhuangtai></Kkeyguanlizhuangtai>
+    <shijianchuancan></shijianchuancan>
+    <shijianxiushifu></shijianxiushifu>
+    <keyguanlizhuangtai></keyguanlizhuangtai>
     <Shijianchuli></Shijianchuli>
     <Shuzubianhuazhence></Shuzubianhuazhence>
     <jisuanshuxing></jisuanshuxing>
-    <classbangding></classbangding>
+    <Classbangding></Classbangding>
     <stylebangding></stylebangding>
+    <Biaodanshujubangding></Biaodanshujubangding>
+    <Mobanyinyong></Mobanyinyong>
     <Zujianzucheng></Zujianzucheng>
     <Zujianqiantao></Zujianqiantao>
     <Zujianchuanzhiprops></Zujianchuanzhiprops>
     <PropsjiaoyanA></PropsjiaoyanA>
+    <Zujianshijian></Zujianshijian>
+    <ZujianshijianVmodel></ZujianshijianVmodel>
+    <chacaoslots></chacaoslots>
+    <shengmingzhouqi></shengmingzhouqi>
+    <shengmingzhouqiyingyong></shengmingzhouqiyingyong>
+
+
   </div>
 </template>
 
@@ -26,19 +37,25 @@ import Shijianchuli from '../components/shijianchuli.vue';
 import Shuxingbangding from '../components/shuxingbangding.vue';
 import Tiaojianxuanran from '../components/tiaojianxuanran.vue';
 import liebiaoxuanran from '../components/liebiaoxuanran.vue';
-import shijianchuancan from '../components/shijianchuancan.vue';
-import shijianxiushifu from '../components/shijianxiushifu.vue';
+import Shijianchuancan from '../components/shijianchuancan.vue';
+import Shijianxiushifu from '../components/shijianxiushifu.vue';
 import Shuzubianhuazhence from '../components/shuzubianhuazhence.vue';
-import shuzubianhuazhence from '../components/shuzubianhuazhence.vue';
 import jisuanshuxing from '../components/jisuanshuxing.vue';
-import classbangding from '../components/classbangding.vue';
-import stylebangding from '../components/stylebangding.vue';
-import biaodanshujubangding from '../components/biaodanshujubangding.vue';
-import mobanyinyong from '../components/mobanyinyong.vue';
+import Classbangding from '../components/classbangding.vue';
+import Stylebangding from '../components/stylebangding.vue';
+import Biaodanshujubangding from '../components/biaodanshujubangding.vue';
+import Mobanyinyong from '../components/mobanyinyong.vue';
 import Zujianzucheng from '../components/zujianzucheng.vue';
 import Zujianqiantao from '../components/zujianqiantao.vue';
 import Zujianchuanzhiprops from '../components/zujianchuanzhiprops.vue';
 import PropsjiaoyanA from '../components/propsjiaoyanA.vue';
+import Zujianshijian from '../components/zujianshijian.vue';
+import ZujianshijianVmodel from '../components/zujianshijianVmodel.vue';
+import chacaoslots from '../components/chachaoslots.vue';
+import shengmingzhouqi from '../components/shengmingzhouqi.vue';
+import shengmingzhouqiyingyong from '../components/shengmingzhouqiyingyong.vue';
+
+
 
 export default {
   name: 'home',
@@ -49,18 +66,23 @@ export default {
     liebiaoxuanran,
     keyguanlizhuangtai,
     Shijianchuli,
-    shijianchuancan,
-    shijianxiushifu,
-    shuzubianhuazhence,
+    Shijianchuancan,
+    Shijianxiushifu,
+    Shuzubianhuazhence,
     jisuanshuxing,
-    classbangding,
-    stylebangding,
-    biaodanshujubangding,
-    mobanyinyong,
+    Classbangding,
+    Stylebangding,
+    Biaodanshujubangding,
+    Mobanyinyong,
     Zujianzucheng,
     Zujianqiantao,
     Zujianchuanzhiprops,
     PropsjiaoyanA,
+    Zujianshijian,
+    ZujianshijianVmodel,
+    chacaoslots,
+    shengmingzhouqi,
+    shengmingzhouqiyingyong
   },
 }
 </script>

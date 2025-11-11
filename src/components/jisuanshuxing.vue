@@ -1,12 +1,13 @@
 <template>
     <div class="jisuanshuxing">
-        <hr></hr>
+        <hr>
         <h3>计算属性</h3>
         <p>{{ content.name }}</p>
         <div>{{ content.text.length > 2 ? "yes" : "no" }}</div>
-        <div>{{ content.reverse.length > 0 ? (content.text.length > 0 ? "yes" : "55555") : "22222" }}</div>
+        <div>{{ content.results.length > 0 ? (content.text.length > 0 ? "yes" : "55555") : "22222" }}</div>
         <p>{{ isResults }}</p>
-        <p>{{ isDatat }}</p>
+        <p>{{ isDatat() }}</p>
+        <hr>
     </div>
 
 </template>
@@ -21,7 +22,7 @@ export default {
                 name: 'abccccccccccc',
                 text: ["1","2","3"],
                 text1: [],
-                arr: [{name: "张三", id: 1},{name: "李四", id: 2},{name: "王五", id: 3}],
+                arr: [{ name: "张三", id: 1},{name: "李四", id: 2},{name: "王五", id: 3}],
                 results: [
 
                 ],
@@ -30,12 +31,12 @@ export default {
     },
     computed: {
         isResults() {
-            return this.content.results.length > 0 ? (this.content.results.length > 0 ? "yes" : "89898989") : "22222";
+            return this.content.results.length > 0 ? (this.content.text1.length > 0 ? "yes" : "89898989") : "22222";
         }
     },
     methods: {
-        isResults() {
-            return this.content.results.length > 0 ? (this.content.results.length > 0 ? "yes" : "77777777") : "22222";
+        isDatat() {
+            return this.content.results.length > 0 ? (this.content.text1.length > 0 ? "yes" : "77777777") : "22222";
         }
     }
 };
