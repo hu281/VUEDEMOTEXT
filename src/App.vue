@@ -1,29 +1,38 @@
 <template>
   <div id="app">
-    <Home />
+    <BackgroundEffect></BackgroundEffect>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Home from './views/home.vue';
+// import Home from './views/home.vue';
+import BackgroundEffect from './components/BackgroundEffect.vue';
 
 export default {
   name: 'App',
   components: {
-    Home
-  }
-}
+    // Home
+    BackgroundEffect,
+  },
+};
 </script>
 
 <style>
 body {
   background-color: #000;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  color : #fff;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#app {
+.app-container {
+  position: relative;
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #000;
 }
-</style>
+</style> 

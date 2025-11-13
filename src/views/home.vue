@@ -1,7 +1,10 @@
 <template>
   <div class="home-container">
     <h1>VUE3教学</h1>
-    <hr>
+    <nav class="navigation">
+      <router-link to="/new" class="nav-link">新组建集合</router-link> |
+    </nav>
+    <hr />
     <Mobanyufa></Mobanyufa>
     <Shuxingbangding></Shuxingbangding>
     <Tiaojianxuanran></Tiaojianxuanran> 
@@ -25,6 +28,11 @@
     <chacaoslots></chacaoslots>
     <shengmingzhouqi></shengmingzhouqi>
     <shengmingzhouqiyingyong></shengmingzhouqiyingyong>
+    <Dongtaizujian></Dongtaizujian>
+    <Yibuzujian></Yibuzujian>
+    <yilaizhuruparent></yilaizhuruparent>
+    <yilaizhurusun></yilaizhurusun>
+    
 
 
   </div>
@@ -54,6 +62,10 @@ import ZujianshijianVmodel from '../components/zujianshijianVmodel.vue';
 import chacaoslots from '../components/chachaoslots.vue';
 import shengmingzhouqi from '../components/shengmingzhouqi.vue';
 import shengmingzhouqiyingyong from '../components/shengmingzhouqiyingyong.vue';
+import Dongtaizujian from '../components/dongtaizujian.vue';
+import Yibuzujian from '../components/yibuzujian.vue';
+import yilaizhuruparent from '../components/yilaizhuruparent.vue';
+import yilaizhurusun from '../pages/yilaizhurusun.vue';
 
 
 
@@ -82,7 +94,12 @@ export default {
     ZujianshijianVmodel,
     chacaoslots,
     shengmingzhouqi,
-    shengmingzhouqiyingyong
+    shengmingzhouqiyingyong,
+    Dongtaizujian,
+    Yibuzujian,
+    yilaizhuruparent,
+    yilaizhurusun,
+    
   },
 }
 </script>
